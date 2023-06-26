@@ -8,7 +8,7 @@
 
 Ansible is an open-source automation platform that simplifies the management and deployment of IT systems. It allows you to automate tasks such as configuration management, application deployment, and orchestration across a wide range of systems, including servers, networking devices, and cloud infrastructure.
 
-Key features of Ansible include:
+Here is why ansible is widely used in infrastructure automation:
 
 - **Agentless Architecture**: Ansible uses SSH or WinRM protocols to connect to remote systems, eliminating the need for installing agents on target machines. This makes it lightweight and easy to set up.
 
@@ -29,3 +29,11 @@ Key features of Ansible include:
 Overall, Ansible's simplicity, scalability, and flexibility make it a popular choice for automating IT infrastructure and streamlining repetitive tasks, enabling faster and more reliable deployments and system management.
 
 ## `Introduction to VirtualBox and Vagrant`
+
+VirtualBox is a popular open-source virtualization platform that allows users to create and manage virtual machines (VMs) on their computers. It enables the installation and operation of multiple operating systems simultaneously, emulating a complete computer system within a host machine.
+
+On the other hand, Vagrant is an open-source tool that simplifies the configuration and management of virtual machines (VMs) for development and testing environments. It provides a consistent and reproducible workflow for setting up and managing VMs across different platforms.
+
+By combining VirtualBox, Vagrant, and Ansible, we can easily create and manage reproducible development environments. This allows for consistent configurations, streamlined setup processes, and efficient collaboration among team members. Additionally, Ansible's automation capabilities enhance the provisioning and configuration of the virtual machines created by Vagrant, making it easier to manage complex systems and ensure consistent deployments.
+
+## `Setting up the development environment`
