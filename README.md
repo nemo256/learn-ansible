@@ -2,6 +2,8 @@
 
 # `Ansible with VirtualBox and Vagrant`
 
+</div>
+
 ## Introduction
 
 Ansible is an open-source automation platform that simplifies the management and deployment of IT systems. It allows you to automate tasks such as configuration management, application deployment, and orchestration across a wide range of systems, including servers, networking devices, and cloud infrastructure.
@@ -25,5 +27,3 @@ Key features of Ansible include:
 - Community and Ecosystem: Ansible has a large and active community that contributes to its development, provides support, and shares modules and playbooks through the Ansible Galaxy repository. This vibrant ecosystem makes it easier to leverage existing automation solutions.
 
 Overall, Ansible's simplicity, scalability, and flexibility make it a popular choice for automating IT infrastructure and streamlining repetitive tasks, enabling faster and more reliable deployments and system management.
-
-</div>
