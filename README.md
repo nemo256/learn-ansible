@@ -10,7 +10,7 @@ Ansible is an open-source automation platform that simplifies the management and
 
 Key features of Ansible include:
 
-- <ins> Agentless Architecture </ins>: Ansible uses SSH or WinRM protocols to connect to remote systems, eliminating the need for installing agents on target machines. This makes it lightweight and easy to set up.
+- **__Agentless Architecture__**: Ansible uses SSH or WinRM protocols to connect to remote systems, eliminating the need for installing agents on target machines. This makes it lightweight and easy to set up.
 
 - Declarative Language: Ansible uses a human-readable language called YAML (Yet Another Markup Language) to define tasks, configurations, and playbooks. This makes it easy to write, understand, and maintain automation code.
 
