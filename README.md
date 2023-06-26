@@ -12,4 +12,6 @@ Key features of Ansible include:
 
 - Declarative Language: Ansible uses a human-readable language called YAML (Yet Another Markup Language) to define tasks, configurations, and playbooks. This makes it easy to write, understand, and maintain automation code.
 
+- Playbooks : Ansible organizes automation tasks into playbooks, which are a set of instructions for managing systems.
+
 </div>
