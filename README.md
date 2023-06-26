@@ -10,6 +10,6 @@ Key features of Ansible include:
 
 - Agentless Architecture: Ansible uses SSH or WinRM protocols to connect to remote systems, eliminating the need for installing agents on target machines. This makes it lightweight and easy to set up.
 
-- Declarative Language: Ansible uses YAML to define its configurations, and playbooks. This makes it easy to write, understand, and maintain automation code.
+- Declarative Language: Ansible uses a human-readable language called YAML (Yet Another Markup Language) to define tasks, configurations, and playbooks. This makes it easy to write, understand, and maintain automation code.
 
 </div>
