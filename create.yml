@@ -1,0 +1,41 @@
+---
+- name: Create Debian VMs
+  hosts: localhost
+  gather_facts: false
+  vars:
+    mac_addresses:
+      - "00:11:22:33:44:55"
+      - "AA:BB:CC:DD:EE:FF"
+  tasks:
+    - name: Create Debian VMs
+      command: >
+        VBoxManage createvm --name "{{ item.name }}"
+        --ostype "Debian_64" --register
+      with_items:
+        - { name: "debian1" }
+        - { name: "debian2" }
+
+    - name: Modify VM settings
+      command: >
+        VBoxManage modifyvm "{{ item.name }}"
+        --memory 512 --cpus 1 --nic1 bridged
+        --bridgeadapter1 enp0s3
+        --macaddress1 "{{ mac_addresses[ansible_loop.index0] }}"
+      loop: "{{ groups['debian'] }}"
+
+    - name: Create VM disk
+      command: >
+        VBoxManage createhd --filename "{{ item.name }}.vdi" --size 8192
+      with_items:
+        - { name: "debian1" }
+        - { name: "debian2" }
+
+    - name: Attach VM disk
+      command: >
+        VBoxManage storageattach "{{ item.name }}"
+        --storagectl "SATA Controller" --port 0 --device 0
+        --type hdd --medium "{{ item.name }}.vdi"
+      with_items:
+        - { name: "debian1" }
+        - { name: "debian2" }
+
