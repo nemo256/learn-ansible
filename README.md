@@ -1,6 +1,6 @@
 <div align="center">
 
-# `Ansible with VirtualBox and Vagrant`
+# `Ansible with VirtualBox`
 
 </div>
 
