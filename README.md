@@ -57,3 +57,27 @@ Here are some benefits of using ansible:
 5. Task Definition
 
 6. Execution
+
+## `Advantages of using ansible`
+
+Advantages of using Ansible for the specified task (creating local virtual machines on VirtualBox):
+
+1. **Simplicity and ease of use**: Ansible uses YAML which is very simple and does not require extensive programming knowledge, making it accessible to both beginners and experienced users.
+
+2. **Agentless architecture**: Ansible operates in an agentless manner, leveraging SSH connections to communicate with remote systems. This eliminates the need to install and manage agents on target hosts, simplifying the setup process.
+
+3. **Idempotent and declarative**: Ansible ensures that the desired state of the system is achieved regardless of its current state. It only applies necessary changes, minimizing unintended consequences and allowing for easy system configuration management.
+
+4. **Large community and vast ecosystem**: Ansible has a thriving community and extensive documentation, providing access to a wide range of pre-built modules, playbooks, and roles. This allows users to leverage existing solutions and share knowledge with the community.
+
+## `Disadvantages of using ansible`
+
+1. **Limited real-time interaction**: Ansible primarily focuses on configuration management and automation, which means it may not be the best choice for tasks that require real-time interaction or immediate feedback.
+
+2. **Learning curve**: While Ansible is relatively easy to learn for simple tasks, more complex scenarios may require a deeper understanding of its advanced features, such as conditionals, loops, and templating.
+
+3. **Dependencies**: Ansible depends on SSH or other remote access mechanisms to connect to and manage remote systems. This dependency may pose challenges in environments with strict security policies or limited connectivity.
+
+4. **GUI**: Ansible is only used as TUI (terminal user interface) there is no GUI (graphical user interface). I may argue that this one is an advantage because for development purposes command line applications are usually sufficient.
+
+I have not used terraform yet, but just from research I think that both ansible and terraform are widely used in infrastructure automation and choosing one of them depends heavily on the given task.
