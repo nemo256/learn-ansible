@@ -36,4 +36,24 @@ On the other hand, Vagrant is an open-source tool that simplifies the configurat
 
 By combining VirtualBox, Vagrant, and Ansible, we can easily create and manage reproducible development environments. This allows for consistent configurations, streamlined setup processes, and efficient collaboration among team members. Additionally, Ansible's automation capabilities enhance the provisioning and configuration of the virtual machines created by Vagrant, making it easier to manage complex systems and ensure consistent deployments.
 
-## `Setting up the development environment`
+## `How is ansible useful`
+
+Ansible allowed me to create 2 debian virtual machines using custom configurations such as the ressources I set (How much RAM, CPUs, custom MAC addresses...) and also custom tasks to create, modify and mount the 2 debian VMs.
+
+I also used the inventory.ini (initialization file) to set the target hosts (their hostnames, IP addresses and other configuration options).
+
+(See the other files I used as an example)
+
+Here are some benefits of using ansible:
+
+1. Ansible Playbook
+
+2. Ansible Modules
+
+3. VirtualBox CLI
+
+4. Inventory Configuration
+
+5. Task Definition
+
+6. Execution
